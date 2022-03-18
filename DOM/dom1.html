@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="user_name">
+    <input type="password" id="upwd">
+    <button onclick="myFun()">login</button>
+    <p id="status"></p>
+    <script>
+        function myFun() {
+            if (document.getElementById("user_name").value === "ashokit" && document.getElementById("upwd").value === "ashokit123") {
+                document.getElementById("status").innerHTML = "success";
+            }
+            else { 
+                document.getElementById("status").innerHTML = "fail"; 
+            }
+        }
+    </script>
+</body>
+
+</html>
