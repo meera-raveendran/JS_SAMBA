@@ -1,0 +1,43 @@
+<!-- <script>
+    let obj1={"key_1":"hello_1"};
+    console.log(typeof obj1);  //object
+    let str=JSON.stringify(obj1);
+    console.log(typeof str);
+    let obj2=JSON.parse(str);
+    console.log(typeof obj2);
+    </script> -->
+    <!-- <script>
+    let obj1={"key1":"hello1"};
+    Object.defineProperty(obj1,"key2",{"value":"hello2","writable":false});
+    console.log(obj1);
+    obj1.key1="welcome1";
+    obj1.key2="welcome2";
+    console.log(obj1);
+    delete obj1.key1;
+    delete obj1.key2;
+    console.log(obj1);
+</script> -->
+<!-- <script>
+    let obj1={"key1":"hello1"};
+    Object.defineProperty(obj1,"key2",{"value":"hello2","writable":true});
+    console.log(obj1);
+    obj1.key1="welcome1";
+    obj1.key2="welcome2";
+    console.log(obj1);
+    delete obj1.key1;
+    delete obj1.key2;
+    console.log(obj1);
+</script> -->
+<script>
+    let obj1={"key1":"hello1"};
+    Object.defineProperties(obj1,{"key2":{"value":"hello2","writable":false},"key3":{"value":"hello3","writable":true}});
+    console.log(obj1);
+    obj1.key1="welcome1";
+    obj1.key2="welcome2";
+    obj1.key2="welcome3";
+    console.log(obj1);
+    delete obj1.key1;
+    delete obj1.key2;
+    delete obj1.key3;
+    console.log(obj1);
+</script>

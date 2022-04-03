@@ -1,0 +1,22 @@
+<!-- <script>
+    function class_one(){
+        this.var_one="react js";
+        this.var_two="node js";
+    }
+    let obj=new class_one();
+    console.log(obj.var_one,obj.var_two);
+</script> -->
+<script>
+    function class_one(){
+        this.var_one="react js";
+        this.var_two="node js";
+        this.fun_one=function(){
+            return this.var_one;
+        }
+        this.fun_two=function(){
+            return this.var_two;
+        }
+    }
+    let obj=new class_one();
+    console.log(obj.fun_one(),obj.fun_two());
+</script>

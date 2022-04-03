@@ -1,0 +1,22 @@
+<!-- <script>
+    function funOne(...param1){
+        console.log(param1);
+    }
+    funOne("hello1");    //param1[0]=["hello1"]
+    funOne("hello1","hello2"); //param1[0]=["hello1"] param1[1]=["hello2"]
+    funOne(); //empty array
+    funOne(undefined);
+    funOne(null);
+</script> -->
+<script>
+    function funOne(param1,...param2){
+        console.log(param1,param2);
+    }
+    funOne();  //undefined []
+    funOne("hello1","hello2"); 
+    funOne("hello1","hello2","hello3"); 
+    funOne(undefined,undefined);
+    funOne(null,null);
+
+
+</script>

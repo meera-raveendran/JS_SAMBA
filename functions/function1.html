@@ -1,0 +1,33 @@
+<!-- <script>
+    function fun_one(){
+        return "hello";
+    }
+    console.log(fun_one());
+</script> -->
+<!-- <script>
+    function fun_one(){
+        return"hello";
+    }
+    console.log(fun_one);
+</script> -->
+<!-- <script>
+    function fun_one(para1,para2,para3){
+        console.log(para1,para2,para3);
+    }
+    fun_one("hello1","hello2","hello3")   //hello1 hello2 hello3
+    fun_one()                          //undefined undefined undefined
+    fun_one(undefined,"hello2")          //undefined hello2 undefined
+    fun_one(null,null,null)                //null nullnull
+</script> -->
+<script>
+    function fun_one(){
+        return fun_two;
+    }
+    function fun_two(){
+        return"hello";
+    }
+    console.log(fun_one);   //fun_one definition
+    console.log(fun_one());// fun_one output/Fun_two definition
+    console.log(fun_one()());// fun_two output
+    console.log(fun_two());
+</script>

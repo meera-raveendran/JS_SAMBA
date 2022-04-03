@@ -1,0 +1,15 @@
+<script>
+    function *funOne(){
+        yield "hello1";
+        yield "hello2";
+        yield "hello3";
+        yield "hello4";
+        yield "hello5";
+    }
+    let cursor=funOne();
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+    console.log(cursor.next());
+</script>

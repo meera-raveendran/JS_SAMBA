@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>P1</p>
+    <p>P1</p>
+    <p>P1</p>
+    <p>P1</p>
+    <div>D1</div>
+    <div>D1</div>
+    <div>D1</div>
+    <script>
+        let all_p=document.querySelectorAll("p");
+        for(let p of all_p ){
+        p.style.color="red";   }
+
+        let all_div=document.querySelectorAll("div");
+        for(let div of all_div){
+        div.style.color="green";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<script>
+    let arr=[{"P_ID":111,"P_NAME":"P_1","P_COST":1000},
+             {"P_ID":222,"P_NAME":"P_2","P_COST":2000},
+             {"P_ID":333,"P_NAME":"P_3","P_COST":3000}];
+     document.write(`
+             <table border="1px"
+                     align="center"
+                     cellspacing="10px"
+                     cellpadding="10px">
+     <tr>
+        <th>SI NO</th>
+        <th>P_ID</th>
+        <th>P_NAME</th>
+        <th>P_COST</th>
+        </tr>
+
+       `); 
+       arr.forEach((element,index)=>{
+         document.write(`<tr>)
+                   <td>${index+1}</td>
+                   <td>${element.P_ID}</td>
+                   <td>${element.P_NAME}</td>
+                <td>${element.P_COST}</td>) 
+                </tr>`);
+            });
+        document.write(`</table>`);
+</script>
